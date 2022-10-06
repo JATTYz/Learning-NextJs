@@ -26,9 +26,6 @@ function CharacterPage({character}: {character: Character}) {
   )
 }
 
-CharacterPage.getLayout = function getLayout(page: typeof CharacterPage) {
-  return <Layout>{page}</Layout>;
-};
 
 export const getServerSideProps: GetServerSideProps = async(context) => {
 
