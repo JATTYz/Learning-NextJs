@@ -1,12 +1,13 @@
 import React from 'react'
 import {AiOutlineArrowRight} from 'react-icons/ai'
+
 const Login = () => {
   return (
     <div className='flex flex-row h-screen '>
         
         <div className='bg-black basis-full md:basis-3/5 flex flex-row justify-center items-center'>
-            <div className='bg-white sm:w-3/5 sm:h-2/4 flex flex-col outline outline-offset-2 outline-4'>
-                <div className='mx-10 my-10 flex flex-col'>
+            <div className=' bg-white sm:w-3/5 sm:h-2/4 flex rounded-lg'>
+                <div className=' flex-col mx-10 my-10 z-10 '>
                     <h1 className='text-2xl'>Welcome</h1>
                     <h1 className='text-2xl'>Back</h1>
                     <input 
@@ -20,9 +21,10 @@ const Login = () => {
                     placeholder='Password'
                     />
                     <p className='text-xs'>Forget your password?</p>
-                    <button className='flex justify-center items-center my-3 border-2 bg-yellow-400 border-black'>Login<AiOutlineArrowRight className='mx-3'/></button>
-                    <p className='text-xs mt-10 flex justify-center'>Have not registered with ous?<button className='font-bold'>Sign up</button></p>
+                    <button className='flex w-full justify-center items-center my-3 border-2 bg-yellow-400 border-black'>Login<AiOutlineArrowRight className='mx-3'/></button>
+                    <p className='text-xs mt-10 flex justify-center'>Have not registered with ous?<button className='font-bold mx-2'>Sign up</button></p>
                 </div>
+
             </div>
         </div>
         <div className='bg-lime-500 md:basis-2/5'>
