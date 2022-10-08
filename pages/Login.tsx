@@ -1,7 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {AiOutlineArrowRight} from 'react-icons/ai'
 
 const Login = () => {
+  
+  const [email, setEmail] = useState("");
+
+  const handleEmail = (e: any) => {
+    setEmail(e.target.value);
+  }
+  
+  
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    console.log(email);
+    
+  }
+
   return (
     <div className='flex flex-row h-screen '>
         
@@ -14,6 +28,8 @@ const Login = () => {
                     className='border-2 mt-6 w-full' 
                     type="text"
                     placeholder='Email'
+                    value = {email}
+                    onChange={handleEmail}
                     />
                     <input 
                     className='border-2 w-full my-3' 
@@ -21,7 +37,7 @@ const Login = () => {
                     placeholder='Password'
                     />
                     <p className='text-xs'>Forget your password?</p>
-                    <button className='flex w-full justify-center items-center my-3 border-2 bg-yellow-400 border-black'>Login<AiOutlineArrowRight className='mx-3'/></button>
+                    <button className='flex w-full justify-center items-center my-3 border-2 bg-yellow-400 border-black' onClick={handleSubmit}>Login<AiOutlineArrowRight className='mx-3'/></button>
                     <p className='text-xs mt-10 flex justify-center'>Have not registered with ous?<button className='font-bold mx-2'>Sign up</button></p>
                 </div>
 
