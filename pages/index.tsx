@@ -5,6 +5,7 @@ import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import { Character, GetCharacterResults } from '../types'
 import Login from './Login'
+import Login2 from './Login2'
 import Responsive from './Responsive'
 
 const Home: NextPage<{characters: Character[]}> = ({ characters }: any) => {
@@ -18,7 +19,7 @@ const Home: NextPage<{characters: Character[]}> = ({ characters }: any) => {
       </Head>
 
       <main>
-        <Login/>
+        <Login2/>
       </main>
     </div>
   )

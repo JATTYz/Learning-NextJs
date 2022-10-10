@@ -1,10 +1,10 @@
 export const data = [
      {
-        id: "1",
+        id: "A@gmail.com",
         password: "123"
     },
     {
-        id: "2",
+        id: "B@gmail.com",
         password: "123"
     },
     {
