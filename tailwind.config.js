@@ -8,6 +8,9 @@ module.exports = {
     extend: {
       fontFamily: {
         ubuntu: ["Ubuntu", "sans-sarif"],
+      },
+      colors: {
+        'custom-blue': '#2e5788',
       }
     },
   },

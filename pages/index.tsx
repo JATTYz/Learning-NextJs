@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import { Character, GetCharacterResults } from '../types'
+import Login from './Login'
 import Login2 from './Login2'
 import Login3 from './Login3'
 import Login4 from './Login4'
@@ -20,7 +21,7 @@ const Home: NextPage<{characters: Character[]}> = ({ characters }: any) => {
       </Head>
 
       <main>
-        <Login4/>
+        <Login/>
       </main>
     </div>
   )

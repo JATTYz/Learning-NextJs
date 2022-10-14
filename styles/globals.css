@@ -2,3 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities; 
+
+.sha {
+  box-shadow: 10px 10px #888888;
+}

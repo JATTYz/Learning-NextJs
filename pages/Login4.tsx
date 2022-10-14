@@ -1,3 +1,4 @@
+import axios from 'axios';
 import Image from 'next/image';
 import React, { useState } from 'react'
 import im from '../public/image1.jpg';
@@ -25,11 +26,19 @@ const Login4 = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    axios.post('http://localhost:3000/api/user/user',{
+        email: values.email,
+        password: values.password
+    }).then((res) => {
+        alert("SUCCESSFULLY REGISTERED");
+        console.log(res);
+    }).catch((e) => {
+        alert(e);
+    });
     console.log(values.email);
     console.log(values.password);
     console.log(remember);
-    
-  }
+    }
   return (
     <div className='grid grid-cols-1 md:grid-cols-2'>
         <div className='w-full h-screen hidden md:grid'>
@@ -40,9 +49,9 @@ const Login4 = () => {
             />
         </div>
         <div className=' h-screen w-full mx-auto px-16'>
-        <div className='relative flex flex-col h-full'>
+        <div className='flex flex-col h-full max-w-[600px]'>
         <div className='flex flex-row justify-end'>
-            <p>LoGo Dotra.</p>
+            <p className='text-custom-blue'>LoGo Dotra.</p>
         </div>
             <div className='mt-10'>
                 <h1 className='text-3xl font-bold'>Hi, Welcome back!</h1>

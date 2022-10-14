@@ -20,7 +20,7 @@ const Login = () => {
     <div className='flex flex-row h-screen '>
         
         <div className='bg-black basis-full md:basis-3/5 flex flex-row justify-center items-center'>
-            <div className=' bg-white sm:w-3/5 sm:h-2/4 flex rounded-lg'>
+            <div className=' bg-white sm:w-3/5 sm:h-2/4 flex rounded-lg sha'>
                 <div className=' flex-col mx-10 my-10 z-10 '>
                     <h1 className='text-2xl'>Welcome</h1>
                     <h1 className='text-2xl'>Back</h1>
