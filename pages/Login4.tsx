@@ -35,9 +35,9 @@ const Login4 = () => {
     }).catch((e) => {
         alert(e);
     });
-    console.log(values.email);
-    console.log(values.password);
-    console.log(remember);
+    // console.log(values.email);
+    // console.log(values.password);
+    // console.log(remember);
     }
   return (
     <div className='grid grid-cols-1 md:grid-cols-2'>
