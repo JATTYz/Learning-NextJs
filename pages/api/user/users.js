@@ -11,8 +11,4 @@ export const data = [
         id: "3",
         password: "123"
     },
-    {
-        id: "4",
-        password: "123"
-    }
 ];
