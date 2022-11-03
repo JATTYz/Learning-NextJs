@@ -7,7 +7,7 @@ const Login3 = () => {
         <form className='flex flex-col justify-evenly px-10 my-10 w-full'>
             <label htmlFor="login" className='text-2xl'>Login</label>
             <p className='text-gray-500'>Doesn't have an account yet? 
-                <span className='underline mx-3'>Sign Up</span>
+                <span className='underline '>Sign Up</span>
             </p>
             <label htmlFor="email" className='mb-2 mt-5'>Email Address</label>
             <input 
