@@ -1,12 +1,10 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
+import styles from ".././page.module.css";
+import test from "./test"
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <h1>HELLO WORLD!</h1>
-        <h1>HELLO WORLD!</h1>
+        <h1>This is page {test()}</h1>
       </div>
     </main>
   );
